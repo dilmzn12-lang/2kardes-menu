@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>2Kardes Çiğ Köfte - Kirkuk</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:65px;
+color:#ffb347;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#ff7b00;
+padding:14px 35px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#ffb347;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1a1a1a;
+border-radius:18px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-body{
+padding:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.price{
+color:#ff7b00;
+font-size:24px;
+font-weight:bold;
+}
+
+.about{
+background:#181818;
+text-align:center;
+line-height:2;
+}
+
+.contact{
+background:#111;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+color:white;
+}
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+<source src="food.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+
+<div class="hero-content">
+<h1>2Kardes Çiğ Köfte</h1>
+<p>أفضل أكلات الشيك كفتة في كركوك</p>
+<a href="#menu" class="btn">شاهد المنيو</a>
+</div>
+
+</div>
+</section>
+
+<section class="section about">
+<h2 class="title">من نحن</h2>
+
+<p>
+مطعم 2Kardes يقدم ألذ وجبات الشيك كفتة
+بطعم أصيل وجودة عالية وخدمة سريعة.
+</p>
+
+</section>
+
+<section id="menu" class="section">
+
+<h2 class="title">السندويجات</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<div class="card-body">
+<h3>كوفته لافاش</h3>
+<div class="price">3500 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<div class="card-body">
+<h3>كوفته صمون</h3>
+<div class="price">3500 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+<div class="card-body">
+<h3>جيك كفتة دوروم</h3>
+<div class="price">1500 د.ع</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">الوجبات</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f">
+<div class="card-body">
+<h3>كوفته مع تمن</h3>
+<div class="price">5000 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd">
+<div class="card-body">
+<h3>كوفته بالعدد</h3>
+<div class="price">4000 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<div class="card-body">
+<h3>تكة دجاج</h3>
+<div class="price">3500 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1527477396000-e27163b481c2">
+<div class="card-body">
+<h3>جناح دجاج</h3>
+<div class="price">3500 د.ع</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">العائلي</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-body">
+<h3>جيك كفتة 10 قطع</h3>
+<div class="price">3000 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h3>جيك كفتة 15 قطعة</h3>
+<div class="price">4000 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h3>جيك كفتة 21 قطعة</h3>
+<div class="price">5000 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h3>عائلي كامل</h3>
+<div class="price">10000 د.ع</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">المشروبات</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-body">
+<h3>ماء</h3>
+<div class="price">250 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h3>مشروبات غازية</h3>
+<div class="price">500 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h3>لبن صغير</h3>
+<div class="price">500 د.ع</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h3>لبن كبير</h3>
+<div class="price">1000 د.ع</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section contact">
+
+<h2 class="title">موقع المطعم</h2>
+
+<p>كركوك - شارع المحافظة</p>
+
+<p>0770 000 0000</p>
+
+<a class="btn" href="#">اطلب الآن</a>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/9647700000000">
+☎
+</a>
+
+<footer>
+
+© 2026 2Kardes Çiğ Köfte
+
+</footer>
+
+</body>
+</html>
